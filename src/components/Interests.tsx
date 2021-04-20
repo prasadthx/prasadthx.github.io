@@ -3,6 +3,7 @@ import './Interests.css'
 export const Interests = (props:any) => {
     return (
         <div className="Interests flex justify-evenly items-center text-center flex-wrap">
+            {/*<section className="overlay"></section>*/}
             <div className='languages flex flex-col'>
                 <div className='text-2xl my-7'> Languages </div>
                 <div className='grid grid-cols-2 gap-4'>

@@ -1,3 +1,8 @@
 .projects > div{
 
 }
+
+.Projects{
+    background-image: url(../assets/images/projects.jpg);
+    background-size: cover;
+}

@@ -3,7 +3,7 @@ import './Certifications.css'
 export const Certifications = (props:any) => {
     return (
         <div className="Certifications flex flex-col justify-center items-center">
-            <div className="flex flex-col justify-center items-center">
+            <div className="certificationsBox flex flex-col justify-center items-center">
                 <div className="text-3xl my-4">
                     Coursera
                 </div>
