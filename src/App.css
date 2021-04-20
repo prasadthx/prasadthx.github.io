@@ -9,7 +9,7 @@
 }
 
 .Content {
-    flex: 0.96;
+    flex: 1;
     overflow: scroll;
     scroll-snap-type: y mandatory;
 }
@@ -22,5 +22,18 @@
 }
 
 .NavSidebar {
-    flex: 0.04;
+    /*z-index: 5;*/
+    /*flex: 0.04;*/
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 3vw;
+    /*background:blue;*/
+    z-index: 5;
+}
+
+.NavSidebar:hover{
+    background:bisque;
+    transition: background 500ms ease;
 }
