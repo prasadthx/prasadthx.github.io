@@ -5,3 +5,11 @@
     border-radius: 50%;
     display: inline-block;
 }
+
+/*.classState{*/
+/*    visibility: hidden;*/
+/*}*/
+
+/*.classState:hover{*/
+/*    visibility: visible;*/
+/*}*/
