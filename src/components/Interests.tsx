@@ -1,8 +1,16 @@
 import './Interests.css'
+import VisibilitySensor from "react-visibility-sensor";
 
 export const Interests = (props:any) => {
+    const { inViewport, setPage } = props;
+    function onChange (isVisible:any) {
+        if (isVisible) {
+            setPage(2);
+        }
+    }
     return (
-        <div className="Interests flex justify-evenly items-center text-center flex-wrap">
+        <VisibilitySensor onChange={onChange}>
+        <div className="Interests flex justify-evenly items-center text-center flex-wrap viewport-block" id='interests'>
             {/*<section className="overlay"></section>*/}
             <div className='languages flex flex-col'>
                 <div className='text-2xl my-7'> Languages </div>
@@ -50,5 +58,6 @@ export const Interests = (props:any) => {
                 </div>
             </div>
         </div>
+        </VisibilitySensor>
     )
 }

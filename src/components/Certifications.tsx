@@ -1,8 +1,16 @@
 import './Certifications.css'
+import VisibilitySensor from "react-visibility-sensor";
 
 export const Certifications = (props:any) => {
+    const { inViewport, setPage } = props;
+    function onChange (isVisible:any) {
+        if (isVisible) {
+            setPage(3);
+        }
+    }
     return (
-        <div className="Certifications flex flex-col justify-center items-center">
+        <VisibilitySensor onChange={onChange}>
+        <div className="Certifications flex flex-col justify-center items-center viewport-block" id='certificate'>
             <div className="certificationsBox flex flex-col justify-center items-center">
                 <div className="text-3xl my-4">
                     Coursera
@@ -31,5 +39,16 @@ export const Certifications = (props:any) => {
                 </div>
             </div>
         </div>
+        </VisibilitySensor>
     )
+
+    function isInViewport(element:any) {
+        const rect = element.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
 }

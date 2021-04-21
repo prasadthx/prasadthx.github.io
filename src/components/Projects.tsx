@@ -1,8 +1,16 @@
 import './Projects.css'
+import VisibilitySensor from "react-visibility-sensor";
 
 export const Projects = (props:any) => {
+    const { inViewport, setPage } = props;
+    function onChange (isVisible:any) {
+        if (isVisible) {
+            setPage(4);
+        }
+    }
     return (
-        <div className="Projects flex flex-col justify-evenly items-center">
+        <VisibilitySensor onChange={onChange}>
+        <div className="Projects flex flex-col justify-evenly items-center viewport-block" id='projects'>
             <div>Projects</div>
             <div className="projects flex flex-wrap justify-evenly items-center">
                 <div className="flex-1">Angular Video Conferencing App (WebRTC)</div>
@@ -20,5 +28,6 @@ export const Projects = (props:any) => {
                 <small>Click on a project to view more information</small>
             </div>
         </div>
+        </VisibilitySensor>
     )
 }
