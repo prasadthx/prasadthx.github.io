@@ -3,8 +3,8 @@ import MyPhoto from '../assets/images/prasad.jpg';
 import VisibilitySensor from 'react-visibility-sensor';
 
 export const FirstPage = (props:any) => {
-    const { inViewport, setPage } = props;
-    function onChange (isVisible:any) {
+    const { setPage } = props;
+    const onChange = (isVisible:any) => {
         if (isVisible) {
             setPage(1);
         }

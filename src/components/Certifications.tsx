@@ -2,8 +2,8 @@ import './Certifications.css'
 import VisibilitySensor from "react-visibility-sensor";
 
 export const Certifications = (props:any) => {
-    const { inViewport, setPage } = props;
-    function onChange (isVisible:any) {
+    const { setPage } = props;
+    const onChange = (isVisible:any) => {
         if (isVisible) {
             setPage(3);
         }

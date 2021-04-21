@@ -3,7 +3,6 @@ import { AiFillHome, TiPointOfInterest, AiFillSafetyCertificate, AiOutlineFundPr
 import {useState} from "react";
 import './NavigationSidebar.css'
 
-let classState;
 const href = [
     [   '#home',
         'Home',
