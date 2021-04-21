@@ -49,10 +49,10 @@ export const NavigationSidebar = (props:any) => {
 
                         { hoverState ?
                             <div className='flex flex-col justify-center items-center text-center my-4'>
-                                <div>
+                                <div className=''>
                                     {value[2]}
                                 </div>
-                                <div>
+                                <div className=''>
                                     <small>{value[1]}</small>
                                 </div>
                             </div> :
