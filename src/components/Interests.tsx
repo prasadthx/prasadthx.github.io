@@ -9,13 +9,12 @@ export const Interests = (props:any) => {
         }
     }
     return (
-        <VisibilitySensor onChange={onChange}>
         <div className="Interests flex flex-col justify-evenly items-center text-center viewport-block" id='interests'>
 
             <div className="text-2xl text-center">
                 Interests And Skills
             </div>
-
+            <VisibilitySensor onChange={onChange}>
             <div className="skills flex flex-col justify-evenly overflow-y-scroll py-6 my-6">
 
                 <div className="flex justify-evenly flex-wrap my-4">
@@ -67,7 +66,8 @@ export const Interests = (props:any) => {
                 </div>
             </div>
             </div>
+            </VisibilitySensor>
         </div>
-        </VisibilitySensor>
+
     )
 }

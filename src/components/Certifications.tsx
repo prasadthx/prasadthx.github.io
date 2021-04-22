@@ -15,9 +15,9 @@ export const Certifications = (props:any) => {
     }
     return (
 
-        <div className="Certifications flex flex-col justify-center items-center viewport-block" id='certificate'>
+        <div className="Certifications flex flex-col justify-center items-center viewport-block py-2" id='certificate'>
             <VisibilitySensor onChange={onChange}>
-            <div className="certificationsBox flex flex-col justify-center items-center max-h-full max-w-full">
+            <div className="certificationsBox flex flex-col justify-center items-center max-h-full max-w-full my-3">
                 <div>
                     <div className="text-3xl">
                         Coursera
