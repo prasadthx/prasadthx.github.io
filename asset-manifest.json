@@ -1,27 +1,32 @@
 {
   "files": {
-    "main.css": "/static/css/main.6e83feee.chunk.css",
-    "main.js": "/static/js/main.c3ee7550.chunk.js",
-    "main.js.map": "/static/js/main.c3ee7550.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.79cd343a.js",
-    "runtime-main.js.map": "/static/js/runtime-main.79cd343a.js.map",
-    "static/js/2.af68094c.chunk.js": "/static/js/2.af68094c.chunk.js",
-    "static/js/2.af68094c.chunk.js.map": "/static/js/2.af68094c.chunk.js.map",
-    "static/js/3.247b9e83.chunk.js": "/static/js/3.247b9e83.chunk.js",
-    "static/js/3.247b9e83.chunk.js.map": "/static/js/3.247b9e83.chunk.js.map",
+    "main.css": "/static/css/main.ff534656.chunk.css",
+    "main.js": "/static/js/main.a092e25c.chunk.js",
+    "main.js.map": "/static/js/main.a092e25c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.5b2665a4.js",
+    "runtime-main.js.map": "/static/js/runtime-main.5b2665a4.js.map",
+    "static/js/2.a8161707.chunk.js": "/static/js/2.a8161707.chunk.js",
+    "static/js/2.a8161707.chunk.js.map": "/static/js/2.a8161707.chunk.js.map",
+    "static/js/3.83ca375a.chunk.js": "/static/js/3.83ca375a.chunk.js",
+    "static/js/3.83ca375a.chunk.js.map": "/static/js/3.83ca375a.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.6e83feee.chunk.css.map": "/static/css/main.6e83feee.chunk.css.map",
-    "static/js/2.af68094c.chunk.js.LICENSE.txt": "/static/js/2.af68094c.chunk.js.LICENSE.txt",
+    "static/css/main.ff534656.chunk.css.map": "/static/css/main.ff534656.chunk.css.map",
+    "static/js/2.a8161707.chunk.js.LICENSE.txt": "/static/js/2.a8161707.chunk.js.LICENSE.txt",
     "static/media/FirstPage.css": "/static/media/background.fbe41b05.jpg",
     "static/media/Certifications.css": "/static/media/certifications.89e333e8.jpg",
+    "static/media/dfe.ae4e041d.png": "/static/media/dfe.ae4e041d.png",
+    "static/media/gis.9933ff15.png": "/static/media/gis.9933ff15.png",
+    "static/media/p3p.d00b0dff.png": "/static/media/p3p.d00b0dff.png",
+    "static/media/pfe.9050b3b2.png": "/static/media/pfe.9050b3b2.png",
     "static/media/prasad.678b2387.jpg": "/static/media/prasad.678b2387.jpg",
     "static/media/Projects.css": "/static/media/projects.93cd49c8.jpg",
-    "static/media/Interests.css": "/static/media/rename.91f25ec2.jpg"
+    "static/media/Interests.css": "/static/media/rename.91f25ec2.jpg",
+    "static/media/sid.4c1ab867.png": "/static/media/sid.4c1ab867.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.79cd343a.js",
-    "static/js/2.af68094c.chunk.js",
-    "static/css/main.6e83feee.chunk.css",
-    "static/js/main.c3ee7550.chunk.js"
+    "static/js/runtime-main.5b2665a4.js",
+    "static/js/2.a8161707.chunk.js",
+    "static/css/main.ff534656.chunk.css",
+    "static/js/main.a092e25c.chunk.js"
   ]
 }
