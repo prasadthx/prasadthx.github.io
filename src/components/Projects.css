@@ -20,3 +20,13 @@
     background-image: url(../assets/images/projects.jpg);
     background-size: cover;
 }
+
+.upperProjectText{
+    visibility: hidden;
+}
+
+/*@media screen and (max-width: 768px) {*/
+/*    .upperProjectText{*/
+/*        visibility: visible;*/
+/*    }*/
+/*}*/
