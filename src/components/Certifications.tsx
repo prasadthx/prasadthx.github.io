@@ -1,5 +1,10 @@
 import './Certifications.css'
 import VisibilitySensor from "react-visibility-sensor";
+import pfe from '../assets/images/certificates/pfe.png';
+import dfe from '../assets/images/certificates/dfe.png';
+import p3p from '../assets/images/certificates/p3p.png';
+import sid from '../assets/images/certificates/sid.png';
+import gis from '../assets/images/certificates/gis.png';
 
 export const Certifications = (props:any) => {
     const { setPage } = props;
@@ -12,32 +17,53 @@ export const Certifications = (props:any) => {
 
         <div className="Certifications flex flex-col justify-center items-center viewport-block" id='certificate'>
             <VisibilitySensor onChange={onChange}>
-            <div className="certificationsBox flex flex-col justify-center items-center">
-                <div className="text-3xl my-4">
-                    Coursera
+            <div className="certificationsBox flex flex-col justify-center items-center max-h-full max-w-full">
+                <div>
+                    <div className="text-3xl">
+                        Coursera
+                    </div>
+                    <div className="courses">
+                        <div>
+                            Google IT Specialization
+                            <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/5VUJUTG74R2B">--</a>
+                        </div>
+                        <div>
+                            Swift 5 IOS Development Specialization
+                            <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/TD3JXKZUCVPL">--</a>
+                        </div>
+                        <div>
+                            Python For Everybody Specialization
+                            <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/8SXL9HJSSHHE">--</a>
+                        </div>
+                        <div>
+                            Python 3 Specialization
+                            <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/BZCRXL2932KJ">--</a>
+                        </div>
+                        <div>
+                            Django For Everybody Specialization
+                            <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/WGKJT6WC8745">--</a>
+                        </div>
+                    </div>
                 </div>
-                <div className="courses">
-                    <div>
-                        Google IT Specialization
-                        <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/5VUJUTG74R2B">--</a>
+
+                <div className='certificateImage flex flex-col items-center justify-center flex-wrap overflow-x-scroll overflow-y-hidden my-3 px-1 py-1 h-3/5'>
+                    <div className='px-0 py-0 mx-0'>
+                        <img src={gis} className='mx-0 my-0'/>
+                    </div>
+                    <div className='px-0 py-0 mx-0'>
+                        <img src={sid} className='mx-0 my-0'/>
+                    </div>
+                    <div className='px-0 py-0 mx-0'>
+                        <img src={pfe} className='mx-0 my-0'/>
                     </div>
                     <div>
-                        Swift 5 IOS Development Specialization
-                        <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/TD3JXKZUCVPL">--</a>
+                        <img src={p3p} className='mx-0 my-0'/>
                     </div>
                     <div>
-                        Python For Everybody Specialization
-                        <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/8SXL9HJSSHHE">--</a>
-                    </div>
-                    <div>
-                        Python 3 Specialization
-                        <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/BZCRXL2932KJ">--</a>
-                    </div>
-                    <div>
-                        Django For Everybody Specialization
-                        <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/WGKJT6WC8745">--</a>
+                        <img src={dfe} className='mx-0 my-0'/>
                     </div>
                 </div>
+
             </div>
             </VisibilitySensor>
         </div>
