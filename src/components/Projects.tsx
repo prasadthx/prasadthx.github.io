@@ -38,8 +38,9 @@ export const Projects = (props:any) => {
              // onClick={(e)=>{if(showInfo)showInfoToggle('')}}
              style = {background}
         >
-            <div className='text-3xl text-black font-bold' style={showInfo==true?{color: 'white'}:{}}>Projects</div>
             <VisibilitySensor onChange={onChange}>
+            <div className='text-3xl text-black font-bold' style={showInfo==true?{color: 'white'}:{}}>Projects</div>
+            </VisibilitySensor>
             <div className="projects flex flex-wrap justify-center items-center px-10 overflow-y-scroll" style = {visibility}>
                 <div className="" onClick={(e)=>showInfoToggle('AngularWebRTC')}>Angular Video Conferencing App (WebRTC)</div>
                 <div className="" onClick={(e)=>showInfoToggle('NodeJS_SignalingServer')}>NodeJS Signaling Server</div>
@@ -52,7 +53,7 @@ export const Projects = (props:any) => {
                 <div className="" onClick={(e)=>showInfoToggle('IOSShop')}>Window Shopper (IOS)</div>
                 <div className="" onClick={(e)=>showInfoToggle('MessageThx')}>Real Time Messaging App</div>
             </div>
-            </VisibilitySensor>
+
             <div>
                 <small>Click on a project to view more information</small>
             </div>

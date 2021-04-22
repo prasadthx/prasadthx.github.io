@@ -16,12 +16,13 @@ export const Certifications = (props:any) => {
     return (
 
         <div className="Certifications flex flex-col justify-center items-center viewport-block py-2" id='certificate'>
-            <VisibilitySensor onChange={onChange}>
+
             <div className="certificationsBox flex flex-col justify-center items-center max-h-full max-w-full my-3">
                 <div>
                     <div className="text-3xl">
                         Coursera
                     </div>
+                    <VisibilitySensor onChange={onChange}>
                     <div className="courses">
                         <div>
                             Google IT Specialization
@@ -44,6 +45,7 @@ export const Certifications = (props:any) => {
                             <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/WGKJT6WC8745">--</a>
                         </div>
                     </div>
+                    </VisibilitySensor>
                 </div>
 
                 <div className='certificateImage flex flex-col items-center justify-center flex-wrap overflow-x-scroll overflow-y-hidden my-3 px-1 py-1 h-3/5'>
@@ -65,7 +67,7 @@ export const Certifications = (props:any) => {
                 </div>
 
             </div>
-            </VisibilitySensor>
+
         </div>
 
     )
