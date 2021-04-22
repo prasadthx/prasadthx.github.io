@@ -34,13 +34,13 @@ export const Projects = (props:any) => {
 
     return (
         <VisibilitySensor onChange={onChange}>
-        <div className="Projects flex flex-col flex-wrap justify-evenly items-center viewport-block"
+        <div className="Projects flex flex-col justify-evenly items-center viewport-block"
              id='projects'
              // onClick={(e)=>{if(showInfo)showInfoToggle('')}}
              style = {background}
         >
             <div className='text-3xl text-black font-bold' style={showInfo==true?{color: 'white'}:{}}>Projects</div>
-            <div className="projects flex flex-wrap justify-center items-center px-10" style = {visibility}>
+            <div className="projects flex flex-wrap justify-center items-center px-10 overflow-y-scroll" style = {visibility}>
                 <div className="" onClick={(e)=>showInfoToggle('AngularWebRTC')}>Angular Video Conferencing App (WebRTC)</div>
                 <div className="" onClick={(e)=>showInfoToggle('NodeJS_SignalingServer')}>NodeJS Signaling Server</div>
                 <div className="" onClick={(e)=>showInfoToggle('ReactJSTwitterClone')}>ReactJS Twitter Clone (FrontEnd Only)</div>
