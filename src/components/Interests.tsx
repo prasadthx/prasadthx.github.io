@@ -9,15 +9,15 @@ export const Interests = (props:any) => {
         }
     }
     return (
-        <div className="Interests flex flex-col justify-evenly items-center text-center viewport-block" id='interests'>
+        <div className="Interests flex flex-col justify-evenly items-center text-center" id='interests'>
 
             <div className="text-2xl text-center">
                 Interests And Skills
             </div>
             <VisibilitySensor onChange={onChange}>
-            <div className="skills flex flex-col justify-evenly overflow-y-scroll py-6 my-6">
+            <div className="skills flex flex-col overflow-y-scroll my-3">
 
-                <div className="flex justify-evenly flex-wrap my-4">
+                <div className="flex justify-evenly flex-wrap">
                     <div className='languages flex flex-col'>
                         <div className='text-2xl my-7'> Languages </div>
                         <div className='grid grid-cols-2 gap-4'>

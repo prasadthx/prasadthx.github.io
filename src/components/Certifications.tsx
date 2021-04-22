@@ -48,7 +48,7 @@ export const Certifications = (props:any) => {
                     </VisibilitySensor>
                 </div>
 
-                <div className='certificateImage flex flex-col items-center justify-center flex-wrap overflow-x-scroll overflow-y-hidden my-3 px-1 py-1 h-3/5'>
+                <div className='certificateImage flex flex-col items-center justify-center flex-wrap overflow-x-scroll overflow-y-hidden my-3 px-1 py-1 '>
                     <div className='px-0 py-0 mx-0'>
                         <img src={gis} className='mx-0 my-0'/>
                     </div>

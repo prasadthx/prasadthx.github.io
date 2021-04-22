@@ -20,6 +20,7 @@
 .certificateImage{
     scroll-snap-type: x mandatory;
     width:60%;
+    height: 60%;
 }
 
 .certificateImage::-webkit-scrollbar {
@@ -34,5 +35,6 @@
 @media screen and (max-width: 700px){
     .certificateImage{
         width:85%;
+        height:45%;
     }
 }

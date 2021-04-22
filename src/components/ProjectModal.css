@@ -16,3 +16,7 @@
 .break-word{
     word-wrap: break-word;
 }
+
+.renderer::-webkit-scrollbar{
+    display: none;
+}

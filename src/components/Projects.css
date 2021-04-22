@@ -12,6 +12,10 @@
     cursor: pointer;
 }
 
+.projects::-webkit-scrollbar{
+    display: none;
+}
+
 .Projects{
     background-image: url(../assets/images/projects.jpg);
     background-size: cover;
