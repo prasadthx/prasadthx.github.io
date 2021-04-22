@@ -9,8 +9,9 @@ export const Certifications = (props:any) => {
         }
     }
     return (
-        <VisibilitySensor onChange={onChange}>
+
         <div className="Certifications flex flex-col justify-center items-center viewport-block" id='certificate'>
+            <VisibilitySensor onChange={onChange}>
             <div className="certificationsBox flex flex-col justify-center items-center">
                 <div className="text-3xl my-4">
                     Coursera
@@ -38,8 +39,9 @@ export const Certifications = (props:any) => {
                     </div>
                 </div>
             </div>
+            </VisibilitySensor>
         </div>
-        </VisibilitySensor>
+
     )
 
     function isInViewport(element:any) {
