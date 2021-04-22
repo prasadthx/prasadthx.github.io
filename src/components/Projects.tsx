@@ -36,7 +36,7 @@ export const Projects = (props:any) => {
         <VisibilitySensor onChange={onChange}>
         <div className="Projects flex flex-col flex-wrap justify-evenly items-center viewport-block"
              id='projects'
-             onClick={(e)=>{if(showInfo)showInfoToggle('')}}
+             // onClick={(e)=>{if(showInfo)showInfoToggle('')}}
              style = {background}
         >
             <div className='text-3xl text-black font-bold' style={showInfo==true?{color: 'white'}:{}}>Projects</div>
