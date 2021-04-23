@@ -11,3 +11,67 @@
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
+
+.twitterIcon{
+    animation: glowTwitter 3s linear infinite;
+    transition: transform 500ms;
+}
+
+@keyframes glowTwitter{
+    0% { box-shadow: 0 0 50px white; }
+    50% {box-shadow: 0 0 30px blue;}
+    100% {box-shadow: 0 0 50px white}
+}
+
+.linkedinIcon{
+    animation: glowLinkedIn 3s linear infinite;
+    transition: transform 500ms;
+}
+
+@keyframes glowLinkedIn{
+    0% { box-shadow: 0 0 50px white; }
+    50% {box-shadow: 0 0 30px blue;}
+    100% {box-shadow: 0 0 50px white}
+}
+
+.githubIcon{
+    animation: glowGithub 3s linear infinite;
+    transition: transform 500ms;
+}
+
+@keyframes glowGithub{
+    0% { box-shadow: 0 0 50px white; }
+    50% {box-shadow: 0 0 30px darkviolet;}
+    100% {box-shadow: 0 0 50px white}
+}
+
+.mailIcon{
+    animation: glowMail 3s linear infinite;
+    transition: transform 500ms;
+}
+
+@keyframes glowMail{
+    0% { box-shadow: 0 0 50px darkred; }
+    50% {box-shadow: 0 0 30px lightpink;}
+    100% {box-shadow: 0 0 50px darkred}
+}
+
+.twitterIcon:hover{
+    transform: scale(1.5,1.5);
+    transition: transform 500ms;
+}
+
+.githubIcon:hover{
+    transform: scale(1.5,1.5);
+    transition: transform 500ms;
+}
+
+.linkedinIcon:hover{
+    transform: scale(1.5,1.5);
+    transition: transform 500ms;
+}
+
+.mailIcon:hover{
+    transform: scale(1.5,1.5);
+    transition: transform 500ms;
+}
