@@ -3,6 +3,7 @@ import MyPhoto from '../assets/images/prasad.jpg';
 import VisibilitySensor from 'react-visibility-sensor';
 import { FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md'
+import {Fade, Slide} from "react-awesome-reveal";
 
 export const FirstPage = (props:any) => {
     const { setPage } = props;
@@ -13,7 +14,8 @@ export const FirstPage = (props:any) => {
     }
     return (
 
-        <div className="FirstPage flex justify-center items-center flex-col text-center my-2 viewport-block" id='home'>
+        <div className="FirstPage h-full w-full flex justify-center items-center flex-col text-center my-2 viewport-block" id='home'>
+            <Fade>
             <div className="mainFrame flex justify-center items-center flex-col px-5 py-10 mt-16">
                 <div className="flex justify-center">
                     <img src={MyPhoto} alt=""
@@ -28,7 +30,9 @@ export const FirstPage = (props:any) => {
                 </div>
                 </VisibilitySensor>
             </div>
+            </Fade>
             <div className="flex justify-evenly items-center w-2/5 h-1/5 text-3xl">
+                <Slide direction={"down"}>
                 <div className='twitterIcon bg-black px-3 py-3 rounded-full'>
                     <a href="https://twitter.com/prasad_zore"><FaTwitter className='text-blue-600'/></a>
                 </div>
@@ -41,6 +45,7 @@ export const FirstPage = (props:any) => {
                 <div className='mailIcon bg-red-800 px-3 py-3 rounded-full'>
                     <a href="mailto:prasadzore31@gmail.com"><MdEmail/></a>
                 </div>
+                </Slide>
             </div>
         </div>
 

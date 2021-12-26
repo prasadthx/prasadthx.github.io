@@ -13,3 +13,48 @@
 /*.classState:hover{*/
 /*    visibility: visible;*/
 /*}*/
+
+.supporter{
+    background: rgba( 0, 0, 0, 0.75 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 14.0px );
+}
+
+.menu{
+    background:none;
+    box-shadow: none;
+    backdrop-filter: none;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.Icon:hover{
+    transform: scale(1.5,1.5);
+    transition: transform 500ms;
+}
+
+
+@media (min-width: 768px){
+    .Icon:hover ~ .NavHead{
+        visibility: visible;
+    }
+
+    .NavHead{
+        animation-name: revealmenu;
+        animation-duration: 500ms;
+        animation-delay: 500ms;
+    }
+
+    @keyframes revealmenu {
+        from {visibility: hidden;}
+        to {visibility: visible;}
+    }
+
+}

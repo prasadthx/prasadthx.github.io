@@ -31,37 +31,51 @@ export const NavigationSidebar = (props:any) => {
     let classState = hoverState ? 'visible' : 'invisible'
     let dotInvisible = hoverState ? 'invisible' : 'visible'
     return (
-        <div
-            className='w-full h-full text-white text-2xl flex justify-center flex-col'
-            onMouseEnter={ (e) => {setHoverState(true);console.log(classState)}}
-            onMouseLeave={ (e) => {setHoverState(false);console.log(classState)}}
-        >
-            <div>
-            {href.map((value:any, index) => (
-                <div className={index==(pageIndex-1)?'text-indigo-500':'text-white'}>
-                    <a href={value[0]}>
-                        {/*<GoPrimitiveDot className={dotInvisible}/>*/}
-                        {/*<div className={classState}>*/}
-                        {/*    {value[2]}<br/>*/}
-                        {/*    {value[1]}*/}
-                        {/*</div>*/}
+        <div className='MainBar w-full h-full max-h-full text-white flex justify-evenly flex-row md:flex-col'>
+            <div className={pageIndex==1?'flex-1 rounded-tr-2xl md:rounded-bl-xl supporter':'flex-1 supporter'}>
 
-                        { hoverState ?
-                            <div className='flex flex-col justify-center items-center text-center my-4'>
-                                <div className=''>
+            </div>
+            <div className={"menu"}>
+            {href.map((value:any, index) => (
+                <div
+                    className={getClassName(index, pageIndex)}>
+                    <a href={value[0]}>
+                            <div className='flex grow-0 flex-row justify-center items-center text-center py-4 px-2'>
+                                <div className='rounded-full bg-purple-600 p-2 Icon relative'>
                                     {value[2]}
                                 </div>
-                                <div className=''>
-                                    <small>{value[1]}</small>
+                                <div className='text-sm invisible NavHead absolute right-10 text-white bg-purple-600 px-3 rounded-l-full'>
+                                    {/*{*/}
+                                    {/*    pageIndex-1== index? (<small>{value[1]}</small>) : (<></>)*/}
+                                    {/*}*/}
+                                    <span>{value[1]}</span>
                                 </div>
-                            </div> :
-
-                            <GoPrimitiveDot className='my-4 mr-5'/>
-                        }
+                              </div>
                     </a>
                 </div>
             ))}
             </div>
+            <div className={pageIndex==4?'flex-1 rounded-tl-2xl supporter':'flex-1 supporter'}>
+
+            </div>
         </div>
     )
+}
+
+const getClassName = (index: number, pageIndex:number): string => {
+    let className = "";
+    if(index==(pageIndex-1)){
+        className += 'text-white';
+    }
+    else{
+        className += 'text-white supporter'
+    }
+    if (index == pageIndex){
+        className += ' rounded-tl-2xl'
+    }
+    if (index == pageIndex - 2){
+        className += ' md:rounded-bl-2xl';
+    }
+    className += ' hover:text-2xl'
+    return className;
 }

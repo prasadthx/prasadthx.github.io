@@ -39,7 +39,7 @@ export const Projects = (props:any) => {
              style = {background}
         >
             <VisibilitySensor onChange={onChange}>
-                <div className='text-3xl text-black font-bold text-center' style={showInfo==true?{color: 'white'}:{}}>Projects <br></br></div>
+                <div className='text-3xl text-black font-bold text-center text-white'>Projects <br></br></div>
             </VisibilitySensor>
             {document.documentElement.clientWidth>700?null:<small className="text-center text-white">Click on any project to view more information</small>}
             <div className="projects flex flex-wrap justify-center items-center px-10 overflow-y-scroll" style = {visibility}>

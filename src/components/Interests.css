@@ -1,7 +1,7 @@
 .Interests{
-    background-image: url(../assets/images/rename.jpg) ;
-    /*opacity: 0.7;*/
-    background-size: cover;
+    /*background-image: url(../assets/images/back.jpg) ;*/
+    /*!*opacity: 0.7;*!*/
+    /*background-size: cover;*/
 }
 
 /*.overlay{*/
@@ -16,13 +16,13 @@
 /*    z-index: 0;*/
 /*}*/
 
-.Interests > div{
-    background: rgba( 0, 0, 0, 0.75 );
+.skills{
+    background: rgba( 248, 92, 134, 0.25 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 14.0px );
-    -webkit-backdrop-filter: blur( 14.0px );
-    border-radius: 10px;
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );
     border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 20px;
     padding: 1.5rem;
 }
 
@@ -45,4 +45,12 @@
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #b30000;
+}
+
+.RustLogo{
+    background-color: #9ca3af;
+}
+
+svg{
+    margin: 0;
 }

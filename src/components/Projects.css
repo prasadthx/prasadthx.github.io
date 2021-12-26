@@ -16,11 +16,6 @@
     display: none;
 }
 
-.Projects{
-    background-image: url(../assets/images/projects.jpg);
-    background-size: cover;
-}
-
 .upperProjectText{
     visibility: hidden;
 }

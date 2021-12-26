@@ -3,10 +3,6 @@
     margin-bottom: 2vh;
 }
 
-.Certifications{
-    background-image:url(../assets/images/certifications.jpg);
-}
-
 .certificationsBox{
     background: rgba( 0, 0, 0, 0.75 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -19,8 +15,8 @@
 
 .certificateImage{
     scroll-snap-type: x mandatory;
-    width:60%;
-    height: 60%;
+    overscroll-behavior: contain;
+    scroll-behavior: smooth;
 }
 
 .certificateImage::-webkit-scrollbar {
@@ -37,4 +33,22 @@
         width:85%;
         height:45%;
     }
+}
+
+.certificates{
+    width:60%;
+    height: 60%;
+}
+
+.icon{
+    background: rgba( 0, 0, 0, 0.75 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 14.0px );
+    -webkit-backdrop-filter: blur( 14.0px );
+}
+
+.icon:hover{
+    transform: scale(1.5,1.5);
+    transition: transform 500ms;
+    cursor: pointer;
 }

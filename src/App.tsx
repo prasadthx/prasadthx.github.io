@@ -12,7 +12,7 @@ function App() {
 
     return (
 
-        <div className="App flex">
+        <div className="App flex flex-col md:flex-row">
 
             <div className="Content h-full">
 
@@ -23,7 +23,7 @@ function App() {
 
             </div>
 
-            <div className={"NavSidebar h-full"}>
+            <div className={"NavSidebar h-full w-full"}>
                 <NavigationSidebar currentPage={currentPage}/>
             </div>
 
