@@ -12,7 +12,7 @@ function App() {
 
     return (
 
-        <div className="App flex flex-col md:flex-row">
+        <div className="App flex flex-col md:flex-row z-1">
 
             <div className="Content h-full">
 

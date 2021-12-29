@@ -6,7 +6,7 @@
     right: 0;
     height:100vh;
     width:100vw;
-    /*background-image: url(./assets/images/image.jpg) ;*/
+    background-image: url(./assets/images/image.jpg) ;
     background-size: cover;
     overscroll-behavior: contain;
 }

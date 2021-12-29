@@ -32,7 +32,7 @@ export const Interests = (props:any) => {
     return (
         <div className={"w-full h-full relative"}>
             <VisibilitySensor onChange={onChange}>
-                <div className={"absolute right-1/2 top-1/2 z-0"}>
+                <div className={"absolute right-1/2 top-1/2 z-0 opacity-0"}>
                     Hello World
                 </div>
             </VisibilitySensor>

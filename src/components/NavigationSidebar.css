@@ -33,13 +33,11 @@
         justify-content: space-between;
         align-items: center;
     }
-}
 
-.Icon:hover{
-    transform: scale(1.5,1.5);
-    transition: transform 500ms;
+    .high{
+        /*box-shadow:20px 20px 50px 10px pink inset;*/
+    }
 }
-
 
 @media (min-width: 768px){
     .Icon:hover ~ .NavHead{
@@ -57,4 +55,8 @@
         to {visibility: visible;}
     }
 
+    .Icon:hover{
+        transform: scale(1.5,1.5);
+        transition: transform 500ms;
+    }
 }
