@@ -32,14 +32,14 @@ export const NavigationSidebar = (props:any) => {
     let dotInvisible = hoverState ? 'invisible' : 'visible'
     return (
         <div className='MainBar w-full h-full max-h-full text-white flex justify-evenly flex-row md:flex-col'>
-            <div className={pageIndex==1?'flex-1 rounded-tr-2xl md:rounded-bl-xl supporter':'flex-1 supporter'}>
+            <div className={pageIndex==1?'flex-1 md:rounded-bl-xl supporter':'flex-1 supporter'}>
 
             </div>
             <div className={"menu"}>
-            {href.map((value:any, index) => (
-                <div
-                    className={getClassName(index, pageIndex)}>
-                    <a href={value[0]}>
+                {href.map((value:any, index) => (
+                    <div
+                        className={getClassName(index, pageIndex)}>
+                        <a href={value[0]}>
                             <div className='flex grow-0 flex-row justify-center items-center text-center py-4 px-2'>
                                 <div className='rounded-full bg-purple-600 p-2 Icon relative'>
                                     {value[2]}
@@ -50,10 +50,10 @@ export const NavigationSidebar = (props:any) => {
                                     {/*}*/}
                                     <span>{value[1]}</span>
                                 </div>
-                              </div>
-                    </a>
-                </div>
-            ))}
+                            </div>
+                        </a>
+                    </div>
+                ))}
             </div>
             <div className={pageIndex==4?'flex-1 rounded-tl-2xl supporter':'flex-1 supporter'}>
 

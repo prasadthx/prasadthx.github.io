@@ -32,16 +32,19 @@ export const Certifications = (props:any) => {
     const [currentCert, setCurrentCert] = useState("1");
 
     return (
-
-        <div className="Certifications flex flex-col justify-center items-center md:py-2 h-full max-h-full" id='certificate'>
-
-            <div className="flex flex-col md:flex-row md:justify-around items-center h-full max-w-full m-2">
+    <div className={"w-full h-full relative"}>
+        <VisibilitySensor onChange={onChange}>
+            <div className={"absolute right-1/2 top-1/2 z-0"}>
+                Hello World
+            </div>
+        </VisibilitySensor>
+        <div className="Certifications flex flex-col justify-center items-center md:py-2 h-full max-h-full relative z-1" id='certificate'>
+            <div className="flex flex-col md:flex-row md:justify-around items-center h-full max-w-full m-2 z-1">
                 <div className={"certificationsBox flex flex-col"}>
                     <div className={"text-center"}>
                         Certificates
                     </div>
                     <hr/>
-                    <VisibilitySensor onChange={onChange}>
                     <div className="courses flex flex-col mt-2 overflow-auto">
                         <div className={"flex items-center justify-between"}>
                             <div className={currentCert=="1"?"rounded-full bg-red-800 p-2":"rounded-full bg-blue-800 p-2"}><BsArrowReturnRight/></div>
@@ -89,7 +92,6 @@ export const Certifications = (props:any) => {
                             </div>
                         </div>
                     </div>
-                    </VisibilitySensor>
                 </div>
 
                 <div className='certificates flex w-full items-center justify-center'>
@@ -141,6 +143,6 @@ export const Certifications = (props:any) => {
             </div>
 
         </div>
-
+    </div>
     )
 }
