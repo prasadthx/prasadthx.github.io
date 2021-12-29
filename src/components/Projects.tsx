@@ -33,7 +33,7 @@ export const Projects = (props:any) => {
     const visibility : CSSProperties = showInfo===true ? {visibility: 'hidden'} : {}
 
     return (
-        <div className="Projects flex flex-col justify-evenly items-center viewport-block"
+        <div className="Projects flex flex-col justify-evenly items-center"
              id='projects'
              // onClick={(e)=>{if(showInfo)showInfoToggle('')}}
              style = {background}

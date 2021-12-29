@@ -19,7 +19,7 @@ export const FirstPage = (props:any) => {
                     Hello World
                 </div>
             </VisibilitySensor>
-            <div className="FirstPage h-full w-full flex justify-center items-center flex-col text-center my-2 viewport-block relative" id='home'>
+            <div className="FirstPage h-full w-full flex justify-center items-center flex-col text-center my-2 relative" id='home'>
                 <Fade>
                     <div className="mainFrame flex justify-center items-center flex-col px-5 py-10 mt-16 z-1">
                         <div className="flex justify-center">

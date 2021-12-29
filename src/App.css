@@ -1,14 +1,16 @@
 .App {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height:100vh;
-    width:100vw;
     background-image: url(./assets/images/image.jpg) ;
     background-size: cover;
     overscroll-behavior: contain;
+}
+
+.App::-webkit-scrollbar {
+    display: none;
+}
+
+.App {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 
 .Content {

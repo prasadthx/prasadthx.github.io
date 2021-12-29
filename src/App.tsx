@@ -5,14 +5,17 @@ import { Interests } from "./components/Interests";
 import { Projects } from "./components/Projects";
 import { Certifications } from "./components/Certifications";
 import { NavigationSidebar } from "./components/NavigationSidebar";
+import Div100vh from "react-div-100vh";
+import useVH from "react-viewport-height";
 
 function App() {
+    const vh = useVH();
 
     const [currentPage, setCurrentPage] = useState(1)
 
     return (
 
-        <div className="App flex flex-col md:flex-row z-1">
+        <Div100vh style={{ "scrollbarWidth": "none"}}  className="App flex flex-col md:flex-row z-1 overflow-hidden">
 
             <div className="Content h-full">
 
@@ -27,7 +30,7 @@ function App() {
                 <NavigationSidebar currentPage={currentPage}/>
             </div>
 
-        </div>
+        </Div100vh>
   );
 }
 
