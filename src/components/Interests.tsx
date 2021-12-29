@@ -31,7 +31,7 @@ export const Interests = (props:any) => {
     }
     return (
         <div className="Interests h-full flex flex-col justify-between items-center overflow-y-scroll py-3" id='interests'>
-            <div className={"flex justify-center items-stretch w-5/6 flex-wrap"}>
+            <div className={"flex justify-center items-stretch w-full flex-wrap"}>
                 <Slide direction={"left"}>
                 <div className={"flex justify-center items-stretch flex-wrap"}>
                     <div><CLogo height={"50%"} width={"50%"} className={"block m-auto skills"}/></div>
