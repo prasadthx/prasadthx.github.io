@@ -40,7 +40,7 @@ export const NavigationSidebar = (props:any) => {
                     <div
                         className={getClassName(index, pageIndex)}>
                         <a href={value[0]}>
-                            <div className='flex grow-0 flex-col md:flex-row justify-center items-center text-center py-4 px-2'>
+                            <div className='flex grow-0 flex-col md:flex-row justify-center h-full items-center text-center py-4 px-2'>
                                 <div className='rounded-full bg-purple-600 p-2 Icon relative'>
                                     {value[2]}
                                 </div>
@@ -73,7 +73,7 @@ const getClassName = (index: number, pageIndex:number): string => {
         className += 'text-white high';
     }
     else{
-        className += 'text-white supporter'
+        className += 'text-white supporter high'
     }
     if (index == pageIndex){
         className += ' rounded-tl-2xl'
